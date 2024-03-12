@@ -23,6 +23,11 @@ img{
 }
 body{
     color: var(--text-color);
+    background: url(img/bg.jpg);
+
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;;
 }
 
 
@@ -59,6 +64,7 @@ header.shadow #search-icon{
     align-items: center;
     justify-content: space-between;
     padding: 20px 35px;
+    backdrop-filter: blur(10px);
 
 }
 #menu-icon{
@@ -89,6 +95,7 @@ header.shadow #search-icon{
     font-weight: 500;
     text-decoration: none;
     
+    
 }
 
 .navbar a:hover,
@@ -101,6 +108,12 @@ header.shadow #search-icon{
     font-size: 24px;
     cursor:pointer;
     color: var(--text-color);
+}
+#search-icon:hover{
+    font-size: 27px;
+    cursor:pointer;
+    color: var(--text-color);
+    transition: 0.4s;
 }
 
 .search-box
@@ -139,11 +152,9 @@ header.shadow #search-icon{
     align-items: center;
     /* background-image: url(img/immg.png) ; */
     /* background: url(img/carvideo.mp4);background-image: url(img/Background-home.png); */
-    /* background-repeat: no-repeat; */
-    background-size:1300px;
-    /* background-position: center right; */
-    text-decoration: none;
     
+
+    text-decoration: none;  
 }
 
 .home-text{
@@ -252,9 +263,11 @@ header.shadow #search-icon{
 .about-text{
     flex: 1 1 21rem;
     text-decoration: none;
+    
 }
 .about-text span{
     font-weight: 500;
+    font-size: 27px;
     color: var(--main-color);
 }
 .about-text h2{
@@ -291,7 +304,7 @@ header.shadow #search-icon{
     flex-direction: column;
     /* background: #f6f6f6; */
     border-radius: 0.5rem;
-    background: lightyellow;
+    background: linear-gradient(red,orange 90%);
 }
     
 .parts-container .box img
@@ -360,8 +373,8 @@ header.shadow #search-icon{
     padding: 20px;
 }
 .blog-container .box:hover{
-    background: lightgray;
-    transition: 0.9s;
+    background: lightcyan;
+    transition: 0.5s;
 }
 .blog-container .box span{
     font-size: 1.1rem;
