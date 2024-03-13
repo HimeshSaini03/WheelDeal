@@ -6,14 +6,6 @@
     --bg-color:#fff ;
 }
 
-html::-webkit-scrollbar{
-    width: 0.5rem;
-    background: transparent;
-}
-html::-webkit-scrollbar-thumb{
-    border-radius: 5rem;
-    background:var(--text-color);
-}
 section{
     padding: 4rem 0 2rem;
 }
@@ -64,7 +56,8 @@ header.shadow #search-icon{
     align-items: center;
     justify-content: space-between;
     padding: 20px 35px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
+
 
 }
 #menu-icon{

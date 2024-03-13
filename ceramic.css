@@ -1,0 +1,81 @@
+/*These are variablle */
+:root{
+    --main-color:#d90429 ;
+    --text-color: #020102 ;
+    --bg-color:#fff ;
+}
+
+
+
+body{
+    background: url(img/ggra.jpg);
+
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;;
+}
+.container{
+
+    max-width: 1068px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.heading {
+    font-size: 40px;
+    padding-right: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    
+}
+
+.para p{
+    font-size: 25px;
+    padding-left: 5px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ul{
+    font-size: 18px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.photo{
+    display: flex;
+    flex-direction: row;
+}
+.photo .image1,
+.photo .image2,
+.photo .image3
+{
+    padding-inline: 42px;
+    padding-top: 0px;
+}
+.photo .image1:hover,
+.photo .image2:hover,
+.photo .image3:hover
+{
+    padding-inline: 42px;
+    padding-top:8px;
+    transition: 0.5s;
+}
+.footer{
+    background: var(--text-color);
+    color: #f6f6f6;
+    border-top: 1.5px solid var(--main-color);
+    border-right: 1.5x solid var(--main-color);
+    border-left: 1.5px solid var(--main-color);
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+.footer-container .logo{
+    color: var(--bg-color);
+    margin-bottom: 1rem;
+
+}
+.footer-container .footer-box{
+    display: flex;
+    flex-direction: column;
+}
